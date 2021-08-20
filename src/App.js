@@ -8,17 +8,23 @@ import {
 } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
+import ProductDetails from "./Components/ProductDetails/ProductDetails";
 
 
 function App() {
   return (
-    <div className="App">
+    <div style={{backgroundColor:'#F2F3F7'}}className="App">
 
       <Router>
         <Switch>
-          <Route path="/">
-            <Header></Header>
+          <Route exact path="/">
+            <Header></Header>           
             <Main></Main>
+
+          </Route>
+
+          <Route path="/productDetails/:productID">
+            <ProductDetails></ProductDetails>
 
           </Route>
         </Switch>
