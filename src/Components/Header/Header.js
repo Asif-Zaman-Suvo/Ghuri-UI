@@ -1,12 +1,15 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (        
         <Navbar bg="dark" expand="lg" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">
+               <Link to="/">
+               <Navbar.Brand href="">
                     GHURI LOGO                                    
                 </Navbar.Brand>
+               </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

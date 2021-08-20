@@ -7,7 +7,7 @@ const MainContent = ({ item }) => {
   console.log(item);
 
   return (
-
+  
     <div className="col-md-3 mb-5">
       <Link style={{textDecoration:'none',color:'black'}} to={`/productDetails/${item.productID}`}>
         <Card className="product-card" style={{ width: '16rem', backgroundColor: '#FFFFFF', border: "none", borderRadius: "10px" }}>

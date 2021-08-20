@@ -17,10 +17,8 @@ function App() {
 
       <Router>
         <Switch>
-          <Route exact path="/">
-            <Header></Header>           
+          <Route exact path="/">           
             <Main></Main>
-
           </Route>
 
           <Route path="/productDetails/:productID">

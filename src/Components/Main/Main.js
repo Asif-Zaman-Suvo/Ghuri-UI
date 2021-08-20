@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from '../Header/Header';
 import MainContent from '../MainContent/MainContent';
 
 const Main = () => {
@@ -17,7 +18,10 @@ const Main = () => {
 
     }, [])
     return (
-        <div className="container">
+       
+       <div>
+           <Header></Header>
+            <div className="container">
             <h3 className="mt-5 mb-5">All Products</h3>
             <div className="row">
 
@@ -28,6 +32,7 @@ const Main = () => {
 
 
         </div>
+       </div>
 
     );
 };
